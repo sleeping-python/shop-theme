@@ -60,6 +60,7 @@ export default function Home({ deviceType }) {
       <ContentArea>
         <SidebarWithCardMenu type={PAGE_TYPE} />
         <main>
+          
           <Banner data={bannerSlides} />
           <ProductGrid type={PAGE_TYPE} />
         </main>
