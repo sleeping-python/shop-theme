@@ -375,7 +375,7 @@ export const LogoWrapper = styled.div`
   margin-right: auto;
 
   @media (max-width: 990px) {
-    margin-left: 30px;
+    margin-left: 5px;
   }
 
   img {

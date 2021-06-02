@@ -24,7 +24,7 @@ const Icon = styled.span`
   justify-content: center;
 `;
 
-const NavLink: React.SFC<NavLinkProps> = ({
+const NavLink: React.FC<NavLinkProps> = ({
   href,
   label,
   intlId,

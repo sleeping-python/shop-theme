@@ -5,7 +5,10 @@ const ProductSingleWrapper = styled.div`
   padding: 78px 0 60px 0;
   position: relative;
   background-color: ${themeGet('colors.gray.200', '#f7f7f7')};
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
   @media (min-width: 1600px) {
     padding-top: 89px;
   }
@@ -17,6 +20,7 @@ const ProductSingleWrapper = styled.div`
 
 export const ProductSingleContainer = styled.div`
   width: 100%;
+  max-width: 1128px;
 `;
 
 export const RelatedItemContainer = styled.div`

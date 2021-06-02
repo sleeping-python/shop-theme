@@ -22,11 +22,7 @@ const Layout: React.FunctionComponent<LayoutProps> = ({
   token,
 }) => {
   const { pathname, query } = useRouter();
-  const isSticky =
-    useAppState('isSticky') ||
-    pathname === '/furniture-two' ||
-    pathname === '/grocery-two' || 
-    pathname === '/billboard';
+  const isSticky = true;
 
   const isHomePage = isCategoryPage(query.type) || pathname === '/bakery';
   return (

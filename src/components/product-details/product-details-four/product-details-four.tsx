@@ -29,6 +29,7 @@ import { useLocale } from 'contexts/language/language.provider';
 import { useCart } from 'contexts/cart/use-cart';
 import { Counter } from 'components/counter/counter';
 import { ProductGrid } from 'components/product-grid/product-grid';
+import GridedPreview from 'components/grided-preview/grided-preview';
 
 type ProductDetailsProps = {
   product: any;
@@ -68,10 +69,15 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
       <ProductDetailsWrapper className='product-card' dir='ltr'>
         {!isRtl && (
           <ProductPreview>
-            <CarouselWithCustomDots
+            <GridedPreview
               items={product.gallery}
               deviceType={deviceType}
             />
+            {/* <CarouselWithCustomDots
+              items={product.gallery}
+              deviceType={deviceType}
+            /> */}
+
           </ProductPreview>
         )}
 

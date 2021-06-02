@@ -8,19 +8,19 @@ export const ProductDetailsWrapper = styled.div`
   flex-wrap: wrap;
   align-items: stretch;
   box-sizing: border-box;
-
+  
   * {
     box-sizing: border-box;
   }
 `;
 
 export const ProductPreview = styled.div`
-  width: 50%;
+  width: 100%;
   padding: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: relative;  
 
   img {
     display: block;

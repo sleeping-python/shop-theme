@@ -65,6 +65,7 @@ export const LeftMenu: React.FC<Props> = ({ logo }) => {
         imageUrl={logo}
         alt={'Shop Logo'}
         onClick={() => setActiveMenu(CATEGORY_MENU_ITEMS[0])}
+        showLogo={true}
       />
 {/* 
       <MainMenu>

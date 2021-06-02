@@ -13,8 +13,14 @@ export const LogoBox = styled.span(
   })
 );
 
+export const LogoTitle = styled.div(
+  css({
+    marginLeft: 2
+  })
+)
+
 export const LogoImage = styled.img({
   display: 'block',
   backfaceVisibility: 'hidden',
-  maxWidth: 150,
+  maxWidth: 35,
 });

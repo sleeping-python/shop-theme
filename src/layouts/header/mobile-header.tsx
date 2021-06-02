@@ -66,7 +66,8 @@ const MobileHeader: React.FC<MobileHeaderProps> = ({ className }) => {
   };
   const type = pathname === '/restaurant' ? 'restaurant' : query.type;
 
-  const isHomePage = isCategoryPage(type);
+  const isHomePage = true;
+  // const isHomePage = isCategoryPage(type);
 
   return (
     <MobileHeaderWrapper>
