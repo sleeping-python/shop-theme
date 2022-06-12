@@ -37,21 +37,27 @@ export const SearchWrapper = styled.div`
     opacity: 0;
   }
 `;
+export const HeaderContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:fixed;
+  top:0px;
+  left: 0px;
+  width:100%;
+  background-color: ${themeGet('colors.white', '#ffffff')};
+  box-shadow: ${themeGet('shadows.header', '0 1px 2px rgba(0, 0, 0, 0.06)')};
+  transition: all 0.3s ease;
+  z-index: 99999;
+`;
 
-const HeaderWrapper = styled.header`
-  /* padding: 30px 60px; */
+export const HeaderWrapper = styled.header`
+  max-width: 1188px;
   padding: 20px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
-  z-index: 99999;
-  top: 0;
-  left: 0;
   width: 100%;
-  background-color: ${themeGet('colors.white', '#ffffff')};
-  box-shadow: ${themeGet('shadows.header', '0 1px 2px rgba(0, 0, 0, 0.06)')};
-  transition: all 0.3s ease;
   &.home {
     position: absolute;
     background-color: transparent;
@@ -92,7 +98,7 @@ const HeaderWrapper = styled.header`
 
   &.sticky {
     background-color: ${themeGet('colors.white', '#ffffff')};
-    position: fixed;
+    /* position: fixed; */
     box-shadow: ${themeGet('shadows.header', '0 1px 2px rgba(0, 0, 0, 0.06)')};
     padding-top: 20px;
     padding-bottom: 20px;
@@ -687,5 +693,3 @@ export const TypeIcon = styled.div`
   justify-content: center;
   min-width: 16px;
 `;
-
-export default HeaderWrapper;

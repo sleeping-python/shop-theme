@@ -49,6 +49,7 @@ const baseColor = {
   highlight: '',
 };
 
+
 export const defaultTheme = {
   colors: {
     ...baseColor,
@@ -177,3 +178,16 @@ export const defaultTheme = {
 // lg: 992px,
 // xl: 1200px,
 // xxl: 1400px
+
+// export const customTheme = createMuiTheme({
+//   palette: {
+//     primary: {
+//       main: defaultTheme.colors.primary.regular
+//     }
+//   },
+//   typography: {
+//     button: {
+//       textTransform: "none"
+//     }
+//   }
+// });

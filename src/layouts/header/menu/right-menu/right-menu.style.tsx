@@ -1,5 +1,13 @@
 import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
+import { Button } from '@material-ui/core';
+
+// export const StyledOfferButton = styled(Button)`
+//   label: {
+//     font-size: 25px;
+//     font-weight: 600;
+//   }
+// `;
 export const RightMenuBox = styled.div`
   display: flex;
   align-items: center;

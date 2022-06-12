@@ -5,6 +5,7 @@ import { OFFER_MENU_ITEM, HELP_MENU_ITEM } from 'site-settings/site-navigation';
 import LanguageSwitcher from '../language-switcher/language-switcher';
 import { HelpIcon } from 'assets/icons/HelpIcon';
 import { RightMenuBox } from './right-menu.style';
+import styled from 'styled-components';
 const AuthMenu = dynamic(() => import('../auth-menu'), { ssr: false });
 
 type Props = {
@@ -13,6 +14,10 @@ type Props = {
   avatar: string;
   isAuthenticated: boolean;
 };
+
+const StyledNavLink = styled(NavLink)`
+  
+`;
 
 export const RightMenu: React.FC<Props> = ({
   onLogout,

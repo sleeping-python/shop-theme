@@ -8,15 +8,60 @@ export const ProductDetailsWrapper = styled.div`
   flex-wrap: wrap;
   align-items: stretch;
   box-sizing: border-box;
-  
+  padding: 0px 60px;
   * {
     box-sizing: border-box;
+  }
+  color:rgb(34,34,34);
+`;
+
+export const PageTopbarLayout = styled.div`
+  width: 100%;
+  padding-top: 30px;
+`;
+
+export const PageTopTitle = styled.h3``;
+
+export const PageTitleTopSubbar = styled.div`
+display: flex;
+align-items: center;
+justify-content: space-between;
+`;
+
+export const PageTitleTopLocationLink = styled.a`
+  text-decoration: underline;
+  color: ${themeGet('color.grey', '#333333')};
+`;
+
+export const PageTopRight = styled.div`  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const PageTopShare = styled.div`
+  padding:2px 8px;
+  margin-left: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background: ${themeGet('color.grey[200]', "#F7F7F7")};
+  }
+`;
+
+export const PageTopSave = styled.div`
+  padding:2px 8px;
+  margin-left: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background: ${themeGet('color.grey[200]', "#F7F7F7")};
   }
 `;
 
 export const ProductPreview = styled.div`
   width: 100%;
-  padding: 60px;
+  padding: 12px 0px ;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,7 +70,6 @@ export const ProductPreview = styled.div`
   img {
     display: block;
     max-width: 100%;
-    max-height: 450px;
     height: auto;
   }
 
@@ -66,9 +110,8 @@ export const BackButton = styled.div`
 `;
 
 export const ProductInfo = styled.div`
-  width: 50%;
-  border-left: 1px solid ${themeGet('colors.gray.500', '#f1f1f1')};
-  padding: 55px 60px;
+  width: 100%;
+  padding: 12px 0px;
 
   @media (max-width: 990px) {
     padding: 30px 40px;
@@ -139,20 +182,74 @@ export const DiscountPercent = styled.span`
   }
 `;
 
-export const ProductTitlePriceWrapper = styled.div`
+export const ProductHighlightSection = styled.div`
   width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   margin-bottom: 10px;
+  border-bottom: ${themeGet("colors.grey[700]", "#E6E6E6")} solid 1px;
+  padding-bottom:20px;
 `;
 
-export const ProductTitle = styled.h1`
-  font-family: ${themeGet('fonts.body', 'sans-serif')};
+export const ProductHighlightsWrapper = styled.div`
+  max-width: 500px;
+`;
+
+export const ProductHighlight = styled.div`
+    padding: 10px 0px 10px 0px;
+`;
+export const ProductHighlightHeading = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: large;
+  font-weight: 500;
+  /* color:rgb(34,34,34); */
+
+`;
+export const ProductHighlightHeadingIcon = styled.div`
+  height: 25px;
+  padding-right: 10px;
+`;
+
+export const ProductHighlightHeadingText = styled.h5`
+  font-size: large;
+  font-weight: 500;
+`;
+export const ProductHighlightDetails = styled.div`
+  
+`;
+
+export const ProductLocationSection = styled.div`
+  width: 100%;
+  margin-bottom: 10px;
+  border-bottom: ${themeGet("colors.grey[700]", "#E6E6E6")} solid 1px;
+  padding-bottom:20px;
+  height:400px
+`;
+
+export const ProductLocationWrapper = styled.div`
+  
+`;
+
+
+
+export const ProductTitlePriceWrapper = styled.div`
+  width: 100%;
+  margin-bottom: 10px;
+  border-bottom: ${themeGet("colors.grey[700]", "#E6E6E6")} solid 1px;
+  padding-bottom:20px;
+`;
+
+export const ProductTitleSubText = styled.div`
+  width:100%
+  
+`;
+
+export const ProductTitle = styled.h4`
+  /* font-family: ${themeGet('fonts.body', 'sans-serif')};
   font-size: ${themeGet('fontSizes.2xl', '30')}px;
   font-weight: ${themeGet('fontWeights.semiBold', '600')};
   color: ${themeGet('colors.text.bold', '#0D1136')};
-  line-height: 1.5;
+  line-height: 1.5; */
   display: flex;
 
   @media (max-width: 767px) {

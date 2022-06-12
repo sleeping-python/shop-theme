@@ -1,0 +1,6 @@
+Trying google-map-react
+  Added google-map-react
+  Added @types/google-map-react
+Trying react-dates
+  Added react-dates
+  Added @types/react-dates

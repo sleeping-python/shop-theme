@@ -1,6 +1,6 @@
 import { ItemWrapper } from 'features/user-profile/order/order.style';
 import React from 'react';
-import { GridedImageaContainerArra, GridedWrapper } from './grided-preview.styles';
+import { GridedImageaContainerArra, GridContainer, GridedWrapper } from './grided-preview.styles';
 
 const GridedPreview = ({
   items = [],
@@ -11,18 +11,20 @@ const GridedPreview = ({
 
   const images = items.slice(0, 5).map((item: any, index: number) => {
     const GridedImageContainer = GridedImageaContainerArra[index];
-    return <GridedImageContainer>
-      <img
+    return <GridedImageContainer key={"Grided_image_"+index}>
+      <img 
         src={item.url}
         key={index}
         alt={title}
-        style={{ width: '100%', height: '100%', position: 'relative', borderRadius: "inherit" }}
+        style={{ width: '100%', height: '100%', position: 'relative', borderRadius: "inherit", objectFit: "cover" }}
       />
     </GridedImageContainer>
   });
   return (
     <GridedWrapper>
-      {images}
+      <GridContainer>
+        {images}
+      </GridContainer>
     </GridedWrapper>
   )
 }
