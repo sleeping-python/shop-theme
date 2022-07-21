@@ -26,7 +26,7 @@ import { GlobalStyle } from "assets/styles/global.style";
 import { messages } from "site-settings/site-translation/messages";
 import "typeface-lato";
 import "typeface-poppins";
-import { MuiThemeProvider } from "@material-ui/core";
+// import { MuiThemeProvider } from "@material-ui/core";
 // need to provide types
 const DemoSwitcher = dynamic(
   () => import("components/demo-switcher/switcher-btn")
@@ -53,7 +53,7 @@ export default function ExtendedApp({ Component, pageProps }) {
                       {...pageProps}
                       deviceType={{ mobile, tablet, desktop }}
                     />
-                    <DemoSwitcher />
+                    {/* <DemoSwitcher /> */}
                   </AppLayout>
                 </AuthProvider>
               </AppProvider>

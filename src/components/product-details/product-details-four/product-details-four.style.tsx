@@ -74,7 +74,7 @@ export const ProductPreview = styled.div`
   }
 
   @media (max-width: 990px) {
-    padding: 30px 40px 60px;
+    padding: 30px 0px 60px;
   }
   @media (max-width: 767px) {
     flex: 0 0 100%;
@@ -114,7 +114,7 @@ export const ProductInfo = styled.div`
   padding: 12px 0px;
 
   @media (max-width: 990px) {
-    padding: 30px 40px;
+    padding: 30px 0px;
   }
   @media (max-width: 767px) {
     flex: 0 0 100%;

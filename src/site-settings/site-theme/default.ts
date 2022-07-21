@@ -107,8 +107,8 @@ export const defaultTheme = {
     bolder: 900,
   },
   fonts: {
-    body: 'Lato, sans-serif',
-    heading: 'Poppins, sans-serif',
+    body: '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif',
+    heading: '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif',
     monospace: 'Menlo, monospace',
   },
 

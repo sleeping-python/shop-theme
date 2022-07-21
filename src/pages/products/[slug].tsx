@@ -51,22 +51,13 @@ const ProductDetailsPage = ({ data, deviceType }: Props) => {
   let content = (
     <ProductDetails product={data.product} deviceType={deviceType} />
   );
-  if (data.product.type === 'BAKERY') {
-    content = (
-      <ProductDetailsBakery product={data.product} deviceType={deviceType} />
-    );
-  }
-  if (data.product.type === 'GROCERY') {
-    content = (
-      <ProductDetailsGrocery product={data.product} deviceType={deviceType} />
-    );
-  }
+
   return (
     <Modal>
       <ProductSingleWrapper>
         <ProductSingleContainer>
           {content}
-          <CartPopUp deviceType={deviceType} />
+          {/* <CartPopUp deviceType={deviceType} /> */}
         </ProductSingleContainer>
       </ProductSingleWrapper>
     </Modal>

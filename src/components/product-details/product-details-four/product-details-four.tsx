@@ -229,9 +229,9 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
             </ProductHighlightsWrapper>
           </ProductHighlightSection>
 
-          <ProductLocationSection key="map">
+          {/* <ProductLocationSection key="map">
             <SimpleMap center={coords} zoom={10} heatMapPositions={heatMap} />
-          </ProductLocationSection>
+          </ProductLocationSection> */}
 
           <DateRangePicker
             startDate={startDate}
